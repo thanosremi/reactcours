@@ -1,6 +1,7 @@
+
 import React from 'react';
 
-export class Form extends React.Component{
+export class Forms extends React.Component{
     constructor(props){
         super(props)
         this.state = { 
@@ -8,26 +9,22 @@ export class Form extends React.Component{
         }
     }
 
-    recupValeur(){
-        const value = ""
-        this.setState({
-            value: this.props.value
-        })
+    recupValeur(event){
+        console.log(event.target.value)
     }
+
 
     render(){
         return(
         <div>
-            <input type="text" onChange={() => this.recupValeur()}/>
-            <br/><br/>
-            <input type="text" onChange={() => this.recupValeur()}/>
-            <br/><br/>
-            <input type="text" onChange={() => this.recupValeur()}/>
-            <br/><br/>
-            <input type="text" onChange={() => this.recupValeur()}/>
+            <input type="text" onChange={(event) => this.recupValeur(event)}/>
             <br/><br/>
             <button type="submit">Valider</button>
         </div>
         );
     }
+}
+
+const j = { 
+
 }
