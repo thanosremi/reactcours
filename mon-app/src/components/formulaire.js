@@ -8,23 +8,14 @@ export class Form extends React.Component{
         }
     }
 
-    recupValeur(){
-        const value = ""
-        this.setState({
-            value: this.props.value
-        })
+    recupValeur(e){
+        console.log(e.target.value)
     }
 
     render(){
         return(
         <div>
-            <input type="text" onChange={() => this.recupValeur()}/>
-            <br/><br/>
-            <input type="text" onChange={() => this.recupValeur()}/>
-            <br/><br/>
-            <input type="text" onChange={() => this.recupValeur()}/>
-            <br/><br/>
-            <input type="text" onChange={() => this.recupValeur()}/>
+            <input type="text" onChange={(e) => this.recupValeur(e)}/>
             <br/><br/>
             <button type="submit">Valider</button>
         </div>

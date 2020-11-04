@@ -6,6 +6,7 @@ import {Bouton} from './components/bouton.js';
 import {Bouton2} from './components/bouton2.js';
 import {Bouton3} from './components/bouton3.js';
 import {Form} from './components/formulaire.js';
+import {Form2} from './components/formulaire2.js';
 
 function App() {
   const laListe = <List/>;
@@ -13,6 +14,7 @@ function App() {
   const leBouton2 = <Bouton2 value="Click on me !"/>;
   const leBouton3 = <Bouton3/>;
   const laForme = <Form/>;
+  const laForme2 = <Form2/>;
   
   return (
     <div>
@@ -25,6 +27,8 @@ function App() {
       { leBouton3 }
       <br/><br/><br/>
       { laForme }
+      <br/><br/><br/>
+      { laForme2 }
     </div>
   );
 }
